@@ -79,4 +79,7 @@ Downlink: 999999999
 ```
  Flag: `VishwaCTF{s3cret_sit3_http_head3rs_r_c0o1}`
 
-
+# Recipe Archival Workshop ( Chưa làm dc )
+<h3> Brute force các đuôi file cho phép </h3>
+ Sử dụng wordlist ở dưới và dùng Burp
+https://raw.githubusercontent.com/InfoSecWarrior/Offensive-Payloads/main/File-Extensions-Wordlist.txt
