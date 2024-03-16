@@ -71,3 +71,45 @@ Không nhập được, nên thử cách khác với " --> \"
 ![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/63a250bd-e8be-4d6b-a05f-f29c4c01bb83)
 
 Flag:  `picoCTF{jBhD2y7XoNzPv_1YxS9Ew5qL0uI6pasql_injection_53d90e28}`
+
+# Trickster
+
+Bài này chỉ nhận file là `.png`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/f48af0a5-f424-4cc5-81ad-7cd648b60308)
+
+Tuy nhiên khi upload thành công thì file ảnh sẽ ở đâu và xem như thế nào? --> `/robots.txt`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/9cd85183-3bc0-4075-a23d-b86b8f1c2d07)
+
+Thử giấu đuôi `.png.php` xem có được không :))
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/0220657d-62ce-46a0-92ce-3b618bc852cc)
+
+Sẽ ra sao nếu file png thật nhưng lại có mã shell? Nhưng chèn payload vào đâu
+
+https://thecyberjedi.com/php-shell-in-a-jpeg-aka-froghopper/
+
+Vậy thì có thể dùng `Exiftool` để chèn php shell vào comment 
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/7f279125-e744-4107-8fe3-b9af9b61ea5a)
+
+Đổi thành `.png.php`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/c07d1748-bf40-4287-91e9-736ddd5f4156)
+
+Như đã nói ở trên file được up ở `/uploads` 
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/276498bc-2e5d-4cf8-8f29-8e8b8ffee29d)
+
+RCE thành công rồi =))
+
+Tiếp tục dùng shell khác để tiến hành lấy flag `/uploads/ls.png.php`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/682e47be-90cf-43b2-a17e-d6676cd91bdc)
+
+`/GQ4DOOBVMMYGK.txt` 
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/4071e198-2436-482a-83e5-c724717ccb90)
+
+Flag: `picoCTF{c3rt!fi3d_Xp3rt_tr1ckst3r_48785c0e}`
