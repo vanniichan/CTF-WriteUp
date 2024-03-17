@@ -50,3 +50,40 @@ Bài này có 2 cách giải:
 
 Mình sẽ giải cách 2:
 
+nc xem nó có những gì
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/b0b5acde-b71d-4132-b4a5-b603f9fe3de2)
+
+Sau đó có câu hỏi phải OSINT để vào, thử từng cái một :))
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/75905a19-fe60-471d-8103-2a43a5511cb3)
+
+Câu tiếp theo cũng thế
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/a67b3704-ce7a-43f5-a730-c448785dc317)
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/fd9325d7-8a04-440d-af8a-ea7621436938)
+
+Khi `Start instance` ta lấy đước flag ở /root, tuy nhiên ta không có quyền để 
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/035cfb32-4457-4aa7-b1be-e01694c5da76)
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/5bd11593-f9cb-4095-b138-1611996c3cba)
+
+Đọc code `script.py`, thấy được đây là chương trình để chạy bài này và điều đặc biệt là banner xuất hiện khi nc vào với nội dung được để ở `/home/player/banner`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/d0d22bf7-bb10-4e7d-8921-a5ff3d2789e3)
+
+Tận dụng được điều nay trong điều kiện không thể đọc được `flag.txt` thì liệu rằng có thể đọc nó nếu ta overwrite nội dung từ `flag.txt` vào `banner`
+
+[Symlinks](https://www.freecodecamp.org/news/symlink-tutorial-in-linux-how-to-create-and-remove-a-symbolic-link/)
+
+Phải xóa file banner rồi mới đè lên dc :)
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/9ba2f628-9654-4c43-8a9c-4c7f2fe03690)
+
+Done!
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/2259d237-9e64-435d-b005-48bc60669ef9)
+
+Flag: `picoCTF{b4nn3r_gr4bb1n9_su((3sfu11y_ed6f9c71}`
