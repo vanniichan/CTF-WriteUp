@@ -1,2 +1,2 @@
-![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/26c394e6-8e9a-4cb6-b841-d56fc483497b)
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/9d556e1f-60f9-49b6-9a2e-a7212809c75f)
 
