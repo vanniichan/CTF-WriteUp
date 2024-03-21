@@ -1,5 +1,3 @@
-![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/1b356b76-a9f4-4f30-b042-d2313b6b75b6)
-
 # Bookmarklet
 
 ![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/122f0369-c8f7-44a3-b4f7-33b71f41cb74)
@@ -115,3 +113,6 @@ Tiếp tục dùng shell khác để tiến hành lấy flag `/uploads/ls.png.ph
 ![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/4071e198-2436-482a-83e5-c724717ccb90)
 
 Flag: `picoCTF{c3rt!fi3d_Xp3rt_tr1ckst3r_48785c0e}`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/1b356b76-a9f4-4f30-b042-d2313b6b75b6)
+
