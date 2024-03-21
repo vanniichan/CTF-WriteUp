@@ -1,5 +1,3 @@
-![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/9d556e1f-60f9-49b6-9a2e-a7212809c75f)
-
 Mình chỉ làm 3 bài gần cuối vì nó hơi "rắc rối" xíu, mấy bài kia thì đơn giản quá :)
 
 # Binary Search
@@ -87,3 +85,5 @@ Done!
 ![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/2259d237-9e64-435d-b005-48bc60669ef9)
 
 Flag: `picoCTF{b4nn3r_gr4bb1n9_su((3sfu11y_ed6f9c71}`
+
+![image](https://github.com/vanniichan/CTF-WriteUp/assets/112863484/9d556e1f-60f9-49b6-9a2e-a7212809c75f)
